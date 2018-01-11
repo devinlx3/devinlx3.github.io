@@ -1,0 +1,146 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.wrapper{width:100%; height:auto; overflow:hidden}
+
+/*顶部区域*/
+.top{width:100%; height:34px; background:#f3f3f3}
+.top_center{width:1200px; height:34px; margin:0px auto}
+.top_left{width:470px; height:34px; line-height:34px; float:left;font-size:14px; color:#666}
+.top_left span{color:#ff7800; margin-right:15px}
+
+.top_right{width:405px; height:34px; float:right}
+.one{width:140px; height:34px;float:left}
+.one a{display:inline-block; width:60px; height:24px; line-height:24px; border-radius:5px; margin:5px 3px; text-align:center; background:#efefef; color:#000}
+.one a:hover,.one a.login{ background:#5abd33; color:#fff}
+.top_right ul{width:265px; height:34px; line-height:34px; float:right; background:url(../images/top_icons.png) left center no-repeat}
+.top_right ul li{ display:inline-block; width:88px; float:left; text-indent:20px}
+.top_right ul li a{color:#666;}
+.top_right ul li a:hover{color:#ff7800}
+
+/*header*/
+.header{width:1200px; height:90px; margin:45px auto}
+.logo{width:380px; height:90px; float:left}
+.searcher{width:460px;height:90px; float:left; margin-left:20px}
+.search_top{height:28px;}
+.search_top li{ width:60px; height:28px; line-height:28px;float:left;text-align:center; color:#333; border-top-left-radius:5px;border-top-right-radius:5px; background:#efefef; font-size:14px}
+.search_top li.pp,.searche_top li:hover{ background:#5abd33; color:#fff}
+.search_c{width:456px; height:46px;line-height:46px; background:#f9f9f9 url(../images/icon1.png) no-repeat 5px center; border:2px solid #5abd33}
+.search_c input{width:320px; height:20px; line-height:20px; padding:13px 0px; margin-left:33px; border:none; background:#f9f9f9}
+.search_c a{ display:inline-block; width:102px;height:46px; line-height:46px; text-align:center; color:#fff; background:#5abd33; float:right}
+ul.kjss{height:28px; line-height:28px; overflow:hidden;}
+ul.kjss li{float:left; margin-right:16px}
+ul.kjss a{ color:#666}
+ul.kjss a:hover,ul.kjss li.red a{ color:#ff7800}
+.shopping{ width:214px; height:90px;float:right; background:url(../images/shopping.png) no-repeat left 26px; margin-right:15px; position:relative}
+.shopping ul{width:214px; height:38px;margin-top:34px;}
+.shopping ul li{float:left; width:107px; height:38px; line-height:38px; text-indent:2.8em}
+.shopping ul li.gwc a{color:#fff}
+.shopping ul li a:hover{text-decoration:underline}
+.shopping span{ display:inline-block; border-radius:50%; width:30px; height:30px; text-align:center; line-height:30px; color:#fff; position:absolute; right:50px;top:6px; background:#ff993e}
+
+
+/*导航区*/
+.nav{width:1200px; height:48px; line-height:48px; background:#5abd33; margin:20px auto 0px}
+.all{width:234px; height:48px; line-height:48px; float:left; position:relative}
+.all span{ position:absolute; right:30px; top:3px}
+.all a{ display:block;color:#fff;width:234px; height:48px; line-height:48px;text-align:center; background:#3e8223 url(../images/icon2.png) no-repeat 15px center;font-size:18px}
+.nav_main{width:966px; height:48px; float:right}
+.nav_main li{ float:left}
+.nav_main li a{ display:inline-block;height:48px;line-height:48px; padding:0px 36px; color:#fff; font-size:18px}
+.nav_main li a:hover{background:#198F23; color:yellow}
+
+.main{width:1200px; height:auto;margin:0px auto}
+
+
+/*产品导航*/
+.left_box{width:232px; height:auto; overflow:hidden;float:left;border:1px solid #ddd; background:#f8f8f8}
+.left_box li{ height:48px; width:170px; padding:14px 0px; padding-left:62px; background:url(../images/menu.png) no-repeat 10px 17px; border-bottom:1px solid #ddd}
+.left_box li:hover{ background-color:#fff}
+.left_box li h3{height:26px;line-height:26px}
+.left_box li h3 a{color:#222; font-size:16px}
+.left_box li p{width:90%; height:22px; line-height:22px;overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+.left_box li p a{ color:#666; margin-right:8px}
+.left_box li p a:hover,.left_box li h3 a:hover{color:#ff7800}
+
+.left_box li.l2{ background-position:10px -57px}
+.left_box li.l3{ background-position:10px -131px}
+.left_box li.l4{ background-position:10px -205px}
+.left_box li.l5{ background-position:10px -279px}
+.left_box li.l6{ background-position:10px -353px}
+.left_box li.l7{ background-position:10px -424px}
+.left_box li.l8{ background-position:10px -498px}
+
+.center_box{width:747px; height:600px; margin:9px; float:left}
+/*banner*/
+.banner{width:747px; height:380px;position:relative}
+.banner_list{width:747px; height:380px; overflow:hidden;}
+.banner_list img{width:747px; height:380px;}
+.banner .pre{ position:absolute; left:0px; top:155px; display:inline-block; width:45px; height:43px; z-index:9999}
+.banner .next{ position:absolute; right:0px; top:155px; display:inline-block; width:45px; height:43px;z-index:9999}
+.qh{width:230px; height:26px; position:absolute; right:0px; bottom:0px}
+.qh li{ float:left; width:40px; margin-right:5px}
+.qh li a{ display:block; width:40px; height:6px; background:#fff;}
+.qh li.active a,.qh li a:hover{background:#5abd33}
+
+/*prolist*/
+.prolist{width:747px; height:220px;overflow:hidden;  margin:10px 8px; position:relative}
+.prolist ul{width:747px; height:220px; position:absolute;left:0px;top:0px}
+.prolist ul li{width:180px; height:220px; margin:0px 3px; float:left; text-align:center; overflow:hidden}
+.prolist ul li img{height:220px;}
+.prolist .pre{ position:absolute; left:0px; top:88px; display:inline-block; width:45px; height:43px; z-index:9999}
+.prolist .next{ position:absolute; right:0px; top:88px; display:inline-block; width:45px; height:43px;z-index:9999}
+
+/*right_box*/
+.right_box{width:201px; height:600px; margin-top:9px; float:right; overflow:hidden}
+
+/*notice*/
+.notice{width:197px;height:376px; border:2px solid #5abd33; }
+.notice_title{height:52px; background:#f2f2f2;overflow:hidden; position:relative}
+.notice_title span{ position:absolute; right:15px; top:16px;}
+.notice_title h2{ height:26px; line-height:26px; width:170px; margin:13px auto;font-size:16px; font-weight:bold; color:#222; text-indent:0.4em; border-left:7px solid #5abd33}
+.notice ul{height:324px; overflow:hidden; background:#f8f8f8}
+.notice ul li{ width:90%; height:40px; line-height:40px;margin:4px auto; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; background:url(../images/icon3.png) no-repeat left center; text-indent:1em; font-size:14px; color:#666; border-bottom:1px dashed #ddd}
+.notice a{color:#777}
+.notice a:hover{color:#ff7800}
+.ch{margin-top:20px; width:201px; height:195px; overflow:hidden; text-align:center}
+.ch img{height:195px;}
+
+
+.nbanner{width:1200px; margin:15px auto}
+
+/*part1*/
+.part1_title{width:1200px; height:60px;border-bottom:2px solid #32a523}
+.part1_title h2{ font-size:18px; font-weight:600; color:#32a523; height:60px; line-height:60px;width:180px; float:left; text-indent:0.5em}
+.part p{color:#5C5C5C;font-size:14px; height:60px; line-height:60px;width:600px; margin-left:80px; float:left}
+.part p a{ color:#666; margin:0px 5px}
+.part p a:hover{ color:#ff7800}
+
+.lbanner{width:230px; height:540px; overflow:hidden; float:left; margin-top:5px; margin-right:10px}
+
+.pro_list{width:960px; height:540px; margin-top:5px; overflow:hidden}
+.pro_list li{width:210px;margin:0px 15px; height:270px; float:left; position:relative}
+.pro_list img{width:210px;height:200px;}
+.pro_list h4{height:42px; line-height:42px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+.pro_list h4 a{color:#222; font-weight:bold}
+.pro_list li:hover h4 a{color:#ff7800}
+.pro_list p{ height:28px; line-height:28px;}
+div.gwcc{width:210px;height:40px; line-height:40px;background:rgba(48,185,38,0.8) url(../images/gwcc.png) no-repeat 35px center; position:absolute; top:160px; left:0px; display:none}
+div.gwcc a{ color:#fff; display:block; width:100%; height：:40px; line-height:40px; text-align:center}
+.pro_list li:hover div.gwcc{ display:block}
+.pro_list li:hover div.gwcc a:hover{color:yellow}
+
+
+/*part2*/
+.part00{margin-bottom:30px}
+.part2_title{width:1200px; height:60px;border-bottom:2px solid #f85256}
+.part2_title h2{ font-size:18px; font-weight:600; color:#f85256; height:60px; line-height:60px;width:180px; float:left; text-indent:0.5em}
+
+#fix{ position:fixed;top:270px; z-index:9999; width:46px;height:auto; border:1px solid #ddd;background:#f2f2f2;border-bottom:none}
+#fix li{border-bottom:1px solid #ddd}
+#fix li a{display:block; width:46px; line-height:46px;text-align:center; color:#444}
+#fix li a:hover,#fix li#ons a{background:#229733; color:#fff}
+
+.footer{width:100%; height:auto; background:#f7f7f7; text-align:center; margin-top:50px}
+
