@@ -1,825 +1,95 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-
 	<head>
-		<meta charset="utf-8">
-		<title>唯一家O2O商城</title>
-		<link rel="shortcut icon" href="/imgs/favicon.ico" type="image/x-icon" />
-		<link href="css/base.css" type="text/css" rel="stylesheet" />
-		<link href="css/style.css" type="text/css" rel="stylesheet" />
-		<script src="js/jquery-1.11.2.min.js"></script>
-		<script>
-			$(function(){
-				var timer1 = setInterval(function(){
-					$("#ads").css("display","block");
-					clearInterval(timer1);
-					var timer2 = setInterval(function(){
-						$("#ads").css("display","none");
-						clearInterval(timer2);
-					}, 10000);//10s
-				}, 1000);//1s
-				
-			});
-			
-		</script>
-		<style>
-				#ads{
-					margin-left: 110px;
-					display: none;
-				}
-		</style>
+		<meta charset="utf-8" />
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+		<title>我的网址之家</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/index.css" />
+		<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/index.js" ></script>
 	</head>
+	<body >
 
-	<body>
-		<img src="images/ads.jpg" id="ads" width="1200"  />
-		<div class="wrapper">
-			<!--顶部区域-->
-			<div class="top">
-				<div class="top_center">
-					<p class="top_left">欢迎访问家事易便捷商城<span>武大科技园店</span>咨询热线：400-025-2456</p>
-					<div class="top_right">
-						<div class="one">
-							<a href="login.html">登录</a>
-							<a href="register.html" class="login">注册</a>
+		<div id="header" class="container">
+
+			<div class="header_items" id="header_logo">
+				<img src="img/favicon.ico" />
+			</div>
+			<div class="header_items">
+				<div class="header_float">
+					<a href="#">7月25日 <br>周五六月廿九</a>
+				</div>
+				<div class="header_float" style="margin-top: 10px;">
+					<a target="_blank" href="http://wuhan.tianqi.com/?tq" title="查看天气详情">武汉</a>
+				</div>
+			</div>
+			<div class="header_items">
+				<div class="header_float" style="text-align: center;">
+					<a href="http://wuhan.tianqi.com/?tq" title="多云" nowrap="true">
+						<div >
+							<div class="header_float" style="width: 46px;">
+								<!--http://img.tianqi.com/static/images/tqicon1big/b1.png-->
+								<img src="#" style="border:0;width:46px;height:46px">
+							</div>
+							<div class="header_float" style="width: 150px;text-align: left;">
+								<ul style="list-style: none;">
+									<li><span >今天</span><span class="wtpath">多云</span></li>
+									<li>-1℃～10℃</li>
+								</ul>
+							</div>
 						</div>
-						<ul>
-							<li class="two">
-								<a href="#">下载App</a>
-							</li>
-							<li class="three">
-								<a href="#">访问官网</a>
-							</li>
-							<li class="four">
-								<a href="#">帮助文档</a>
-							</li>
-						</ul>
-					</div>
+					</a>
 				</div>
+				<div class="header_float" style="margin-top: 15px;"><a href="#">七日天气</a></div>
 			</div>
-
-			<!--header-->
-			<div class="header">
-				<!--logo-->
-				<div class="logo">
-					<a href="#"><img src="images/logo.png" alt="唯一家" /></a>
-				</div>
-				<!--searcher-->
-				<div class="searcher">
-					<ul class="search_top">
-						<li class="pp">品牌</li>
-						<li>类别</li>
-					</ul>
-					<div class="search_c">
-						<input type="text" value="请输入搜索关键字" onfocus="this.value=''" onblur="this.value='请输入搜索关键字'" maxlength="15" />
-						<a href="#">搜索</a>
-					</div>
-					<ul class="kjss">
-						<li>
-							<a href="#">火龙果</a>
-						</li>
-						<li class="red">
-							<a href="#">泰国香蕉</a>
-						</li>
-						<li>
-							<a href="#">时令大白菜</a>
-						</li>
-						<li class="red">
-							<a href="#">特供酸奶</a>
-						</li>
-						<li>
-							<a href="#">白咖啡</a>
-						</li>
-					</ul>
-				</div>
-				<!--shopping-->
-				<div class="shopping">
-					<ul>
-						<li>
-							<a href="#">个人中心</a>
-						</li>
-						<li class="gwc">
-							<a href="#">购物车</a>
-						</li>
-					</ul>
-					<span>5</span> </div>
-			</div>
-
-			<!--导航区-->
-			<div class="nav">
-				<div class="all">
-					<a href="#">全部商品分类</a><span><img src="images/sjx.png"/></span></div>
-				<ul class="nav_main">
-					<li>
-						<a href="#">首页</a>
-					</li>
-					<li>
-						<a href="#">今日特价</a>
-					</li>
-					<li>
-						<a href="#">热销商品</a>
-					</li>
-					<li>
-						<a href="#">店家推荐</a>
-					</li>
-					<li>
-						<a href="#">优惠特讯</a>
-					</li>
-					<li>
-						<a href="#">客户端下载</a>
-					</li>
-				</ul>
-			</div>
-			<div class="main">
-				<!--产品导航-->
-				<ul class="left_box">
-					<li class="l1">
-						<h3><a href="#">休闲零食</a></h3>
-							<p>
-								<a href="#">薯片</a>
-								<a href="#">辛辣食品</a>
-								<a href="#">膨化食品</a>
-							</p>
-					</li>
-					<li class="l2">
-						<h3><a href="#">坚果炒货</a></h3>
-						<p>
-							<a href="#">夏威夷果</a>
-							<a href="#">碧根果</a>
-							<a href="#">东北松子</a>
-						</p>
-					</li>
-					<li class="l3">
-						<h3><a href="#">缤纷果干</a></h3>
-						<p>
-							<a href="#">芒果干</a>
-							<a href="#">草莓干</a>
-							<a href="#">黄桃干</a>
-						</p>
-					</li>
-					<li class="l4">
-						<h3><a href="#">糕点糖果</a></h3>
-						<p>
-							<a href="#">凤梨酥</a>
-							<a href="#">麻薯</a>
-							<a href="#">椰丝球</a>
-						</p>
-					</li>
-					<li class="l5">
-						<h3><a href="#">鱿鱼海味</a></h3>
-						<p>
-							<a href="#">鱿鱼仔</a>
-							<a href="#">鱿鱼足</a>
-							<a href="#">寿司鱿鱼条</a>
-						</p>
-					</li>
-					<li class="l6">
-						<h3><a href="#">豆干素食</a></h3>
-						<p>
-							<a href="#">鱼豆腐</a>
-							<a href="#">香辣卤藕</a>
-							<a href="#">素毛肚</a>
-						</p>
-					</li>
-					<li class="l7">
-						<h3><a href="#">肉干肉脯</a></h3>
-						<p>
-							<a href="#">肉枣</a>
-							<a href="#">金钱肉</a>
-							<a href="#">猪肉条</a>
-						</p>
-					</li>
-					<li class="l8">
-						<h3><a href="#">果干蜜栈</a></h3>
-						<p>
-							<a href="#">抱抱果</a>
-							<a href="#">脆冬枣</a>
-							<a href="#">和田红枣</a>
-						</p>
-					</li>
-				</ul>
-
-				<!--center_box-->
-				<div class="center_box">
-					<!--banner-->
-					<div class="banner">
-						<ul class="banner_list">
-							<li><img src="images/banner.jpg" /></li>
-							<li><img src="images/banner1.jpg" /></li>
-							<li><img src="images/banner.jpg" /></li>
-							<li><img src="images/banner1.jpg" /></li>
-						</ul>
-						<a class="pre"><img src="images/pre.png" /></a>
-						<a class="next"><img src="images/next.png" /></a>
-						<ul class="qh">
-							<li class="active">
-								<a></a>
-							</li>
-							<li>
-								<a></a>
-							</li>
-							<li>
-								<a></a>
-							</li>
-							<li>
-								<a></a>
-							</li>
-						</ul>
-					</div>
-
-					<!--prolist-->
-					<div class="prolist" id="prolist">
-						<ul id="prolistu">
-							<li>
-								<a href="#"><img src="images/pro1.png" /></a>
-							</li>
-							<li>
-								<a href="#"><img src="images/pro2.png" /></a>
-							</li>
-							<li>
-								<a href="#"><img src="images/pro3.png" /></a>
-							</li>
-							<li>
-								<a href="#"><img src="images/pro4.png" /></a>
-							</li>
-						</ul>
-						<a class="pre" name="pre"><img src="images/ll.png" /></a>
-						<a class="next" name="next"><img src="images/rr.png" /></a>
-					</div>
-				</div>
-
-				<!--right_box-->
-				<div class="right_box">
-					<!--notice-->
-					<div class="notice">
-						<div class="notice_title">
-							<h2>店铺公告</h2>
-							<span><a href="#">+more</a></span></div>
-						<ul>
-							<li>
-								<a href="#">邹亮大神威武霸气抱起曹浩就跑</a>
-							</li>
-							<li>
-								<a href="#">邹亮大神威武霸气抱起曹浩就跑</a>
-							</li>
-							<li>
-								<a href="#">邹亮大神威武霸气抱起曹浩就跑</a>
-							</li>
-							<li>
-								<a href="#">邹亮大神威武霸气抱起曹浩就跑</a>
-							</li>
-							<li>
-								<a href="#">邹亮大神威武霸气抱起曹浩就跑</a>
-							</li>
-							<li>
-								<a href="#">邹亮大神威武霸气抱起曹浩就跑</a>
-							</li>
-							<li>
-								<a href="#">邹亮大神威武霸气抱起曹浩就跑</a>
-							</li>
-							<li>
-								<a href="#">邹亮大神威武霸气抱起曹浩就跑</a>
-							</li>
-						</ul>
-					</div>
-					<div class="ch"><img src="images/pro5.png" /></div>
-				</div>
-
-				<!--nbanner-->
-				<img src="images/nbanner.png" class="nbanner" />
-
-				<!--产品列表楼层区域-->
-				<div class="part1 part00">
-					<div class="part1_title  part">
-						<h2>田园蔬菜</h2>
-						<p>
-							<a href="#">生态蔬菜</a>|
-							<a href="#">有机蔬菜</a>|
-							<a href="#">精品菌菇</a>|
-							<a href="#"> 田园套餐</a>|
-							<a href="#">蔬菜干货</a>|
-							<a href="#">菜类</a>
-						</p>
-					</div>
-					<div class="main_box">
-						<ul name="ll" class="lbanner   p1">
-							<li><img src="images/l_banner.png" /></li>
-							<li><img src="images/lbanner2.png" /></li>
-							<li><img src="images/l_banner.png" /></li>
-						</ul>
-						<ul class="pro_list">
-							<li> <img src="images/pro6.png" />
-								<h4><a href="#">新鲜果蔬新鲜上市快来购买</a></h4>
-								<p>商城价:<span class="red">15.00元</span></p>
-								<div class="gwcc">
-									<a href="#">加入购物车</a>
-								</div>
-							</li>
-							<li> <img src="images/pro7.png" />
-								<h4><a href="#">新鲜果蔬新鲜上市快来购买</a></h4>
-								<p>商城价:<span class="red">15.00元</span></p>
-								<div class="gwcc">
-									<a href="#">加入购物车</a>
-								</div>
-							</li>
-							<li> <img src="images/pro9.png" />
-								<h4><a href="#">新鲜果蔬新鲜上市快来购买</a></h4>
-								<p>商城价:<span class="red">15.00元</span></p>
-								<div class="gwcc">
-									<a href="#">加入购物车</a>
-								</div>
-							</li>
-							<li> <img src="images/pro8.png" />
-								<h4><a href="#">新鲜果蔬新鲜上市快来购买</a></h4>
-								<p>商城价:<span class="red">15.00元</span></p>
-								<div class="gwcc">
-									<a href="#">加入购物车</a>
-								</div>
-							</li>
-							<li> <img src="images/pro6.png" />
-								<h4><a href="#">新鲜果蔬新鲜上市快来购买</a></h4>
-								<p>商城价:<span class="red">15.00元</span></p>
-								<div class="gwcc">
-									<a href="#">加入购物车</a>
-								</div>
-							</li>
-							<li> <img src="images/pro8.png" />
-								<h4><a href="#">新鲜果蔬新鲜上市快来购买</a></h4>
-								<p>商城价:<span class="red">15.00元</span></p>
-								<div class="gwcc">
-									<a href="#">加入购物车</a>
-								</div>
-							</li>
-							<li> <img src="images/pro6.png" />
-								<h4><a href="#">新鲜果蔬新鲜上市快来购买</a></h4>
-								<p>商城价:<span class="red">15.00元</span></p>
-								<div class="gwcc">
-									<a href="#">加入购物车</a>
-								</div>
-							</li>
-							<li> <img src="images/pro7.png" />
-								<h4><a href="#">新鲜果蔬新鲜上市快来购买</a></h4>
-								<p>商城价:<span class="red">15.00元</span></p>
-								<div class="gwcc">
-									<a href="#">加入购物车</a>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</div>
-
-				<!--part2-->
-				<div class="part2 part00">
-					<div class="part2_title part">
-						<h2>田园蔬菜</h2>
-						<p>
-							<a href="#">生态蔬菜</a>|
-							<a href="#">有机蔬菜</a>|
-							<a href="#">精品菌菇</a>|
-							<a href="#"> 田园套餐</a>|
-							<a href="#">蔬菜干货</a>|
-							<a href="#">菜类</a>
-						</p>
-					</div>
-					<div class="main_box">
-						<ul name="ll" class="lbanner  p2">
-							<li><img src="images/l_banner.png" /></li>
-							<li><img src="images/l_banner.png" /></li>
-							<li><img src="images/lbanner2.png" /></li>
-							<li><img src="images/l_banner.png" /></li>
-						</ul>
-						<ul class="pro_list">
-							<li> <img src="images/pro6.png" />
-								<h4><a href="#">新鲜果蔬新鲜上市快来购买</a></h4>
-								<p>商城价:<span class="red">15.00元</span></p>
-								<div class="gwcc">
-									<a href="#">加入购物车</a>
-								</div>
-							</li>
-							<li> <img src="images/pro7.png" />
-								<h4><a href="#">新鲜果蔬新鲜上市快来购买</a></h4>
-								<p>商城价:<span class="red">15.00元</span></p>
-								<div class="gwcc">
-									<a href="#">加入购物车</a>
-								</div>
-							</li>
-							<li> <img src="images/pro9.png" />
-								<h4><a href="#">新鲜果蔬新鲜上市快来购买</a></h4>
-								<p>商城价:<span class="red">15.00元</span></p>
-								<div class="gwcc">
-									<a href="#">加入购物车</a>
-								</div>
-							</li>
-							<li> <img src="images/pro8.png" />
-								<h4><a href="#">新鲜果蔬新鲜上市快来购买</a></h4>
-								<p>商城价:<span class="red">15.00元</span></p>
-								<div class="gwcc">
-									<a href="#">加入购物车</a>
-								</div>
-							</li>
-							<li> <img src="images/pro6.png" />
-								<h4><a href="#">新鲜果蔬新鲜上市快来购买</a></h4>
-								<p>商城价:<span class="red">15.00元</span></p>
-								<div class="gwcc">
-									<a href="#">加入购物车</a>
-								</div>
-							</li>
-							<li> <img src="images/pro8.png" />
-								<h4><a href="#">新鲜果蔬新鲜上市快来购买</a></h4>
-								<p>商城价:<span class="red">15.00元</span></p>
-								<div class="gwcc">
-									<a href="#">加入购物车</a>
-								</div>
-							</li>
-							<li> <img src="images/pro6.png" />
-								<h4><a href="#">新鲜果蔬新鲜上市快来购买</a></h4>
-								<p>商城价:<span class="red">15.00元</span></p>
-								<div class="gwcc">
-									<a href="#">加入购物车</a>
-								</div>
-							</li>
-							<li> <img src="images/pro7.png" />
-								<h4><a href="#">新鲜果蔬新鲜上市快来购买</a></h4>
-								<p>商城价:<span class="red">15.00元</span></p>
-								<div class="gwcc">
-									<a href="#">加入购物车</a>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</div>
-
-				<!--part3-->
-				<div class="part1 part00">
-					<div class="part1_title  part">
-						<h2>田园蔬菜</h2>
-						<p>
-							<a href="#">生态蔬菜</a>|
-							<a href="#">有机蔬菜</a>|
-							<a href="#">精品菌菇</a>|
-							<a href="#"> 田园套餐</a>|
-							<a href="#">蔬菜干货</a>|
-							<a href="#">菜类</a>
-						</p>
-					</div>
-					<div class="main_box">
-						<ul name="ll" class="lbanner  p3">
-							<li><img src="images/l_banner.png" /></li>
-							<li><img src="images/l_banner.png" /></li>
-							<li><img src="images/lbanner2.png" /></li>
-							<li><img src="images/l_banner.png" /></li>
-						</ul>
-						<ul class="pro_list">
-							<li> <img src="images/pro6.png" />
-								<h4><a href="#">新鲜果蔬新鲜上市快来购买</a></h4>
-								<p>商城价:<span class="red">15.00元</span></p>
-								<div class="gwcc">
-									<a href="#">加入购物车</a>
-								</div>
-							</li>
-							<li> <img src="images/pro7.png" />
-								<h4><a href="#">新鲜果蔬新鲜上市快来购买</a></h4>
-								<p>商城价:<span class="red">15.00元</span></p>
-								<div class="gwcc">
-									<a href="#">加入购物车</a>
-								</div>
-							</li>
-							<li> <img src="images/pro9.png" />
-								<h4><a href="#">新鲜果蔬新鲜上市快来购买</a></h4>
-								<p>商城价:<span class="red">15.00元</span></p>
-								<div class="gwcc">
-									<a href="#">加入购物车</a>
-								</div>
-							</li>
-							<li> <img src="images/pro8.png" />
-								<h4><a href="#">新鲜果蔬新鲜上市快来购买</a></h4>
-								<p>商城价:<span class="red">15.00元</span></p>
-								<div class="gwcc">
-									<a href="#">加入购物车</a>
-								</div>
-							</li>
-							<li> <img src="images/pro6.png" />
-								<h4><a href="#">新鲜果蔬新鲜上市快来购买</a></h4>
-								<p>商城价:<span class="red">15.00元</span></p>
-								<div class="gwcc">
-									<a href="#">加入购物车</a>
-								</div>
-							</li>
-							<li> <img src="images/pro8.png" />
-								<h4><a href="#">新鲜果蔬新鲜上市快来购买</a></h4>
-								<p>商城价:<span class="red">15.00元</span></p>
-								<div class="gwcc">
-									<a href="#">加入购物车</a>
-								</div>
-							</li>
-							<li> <img src="images/pro6.png" />
-								<h4><a href="#">新鲜果蔬新鲜上市快来购买</a></h4>
-								<p>商城价:<span class="red">15.00元</span></p>
-								<div class="gwcc">
-									<a href="#">加入购物车</a>
-								</div>
-							</li>
-							<li> <img src="images/pro7.png" />
-								<h4><a href="#">新鲜果蔬新鲜上市快来购买</a></h4>
-								<p>商城价:<span class="red">15.00元</span></p>
-								<div class="gwcc">
-									<a href="#">加入购物车</a>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</div>
-
-				<!--part4-->
-				<div class="part2 part00">
-					<div class="part2_title part">
-						<h2>田园蔬菜</h2>
-						<p>
-							<a href="#">生态蔬菜</a>|
-							<a href="#">有机蔬菜</a>|
-							<a href="#">精品菌菇</a>|
-							<a href="#"> 田园套餐</a>|
-							<a href="#">蔬菜干货</a>|
-							<a href="#">菜类</a>
-						</p>
-					</div>
-					<div class="main_box">
-						<ul name="ll" class="lbanner  p4">
-							<li><img src="images/lbanner2.png" /></li>
-							<li><img src="images/l_banner.png" /></li>
-							<li><img src="images/lbanner2.png" /></li>
-							<li><img src="images/l_banner.png" /></li>
-						</ul>
-						<ul class="pro_list">
-							<li> <img src="images/pro6.png" />
-								<h4><a href="#">新鲜果蔬新鲜上市快来购买</a></h4>
-								<p>商城价:<span class="red">15.00元</span></p>
-								<div class="gwcc">
-									<a href="#">加入购物车</a>
-								</div>
-							</li>
-							<li> <img src="images/pro7.png" />
-								<h4><a href="#">新鲜果蔬新鲜上市快来购买</a></h4>
-								<p>商城价:<span class="red">15.00元</span></p>
-								<div class="gwcc">
-									<a href="#">加入购物车</a>
-								</div>
-							</li>
-							<li> <img src="images/pro9.png" />
-								<h4><a href="#">新鲜果蔬新鲜上市快来购买</a></h4>
-								<p>商城价:<span class="red">15.00元</span></p>
-								<div class="gwcc">
-									<a href="#">加入购物车</a>
-								</div>
-							</li>
-							<li> <img src="images/pro8.png" />
-								<h4><a href="#">新鲜果蔬新鲜上市快来购买</a></h4>
-								<p>商城价:<span class="red">15.00元</span></p>
-								<div class="gwcc">
-									<a href="#">加入购物车</a>
-								</div>
-							</li>
-							<li> <img src="images/pro6.png" />
-								<h4><a href="#">新鲜果蔬新鲜上市快来购买</a></h4>
-								<p>商城价:<span class="red">15.00元</span></p>
-								<div class="gwcc">
-									<a href="#">加入购物车</a>
-								</div>
-							</li>
-							<li> <img src="images/pro8.png" />
-								<h4><a href="#">新鲜果蔬新鲜上市快来购买</a></h4>
-								<p>商城价:<span class="red">15.00元</span></p>
-								<div class="gwcc">
-									<a href="#">加入购物车</a>
-								</div>
-							</li>
-							<li> <img src="images/pro6.png" />
-								<h4><a href="#">新鲜果蔬新鲜上市快来购买</a></h4>
-								<p>商城价:<span class="red">15.00元</span></p>
-								<div class="gwcc">
-									<a href="#">加入购物车</a>
-								</div>
-							</li>
-							<li> <img src="images/pro7.png" />
-								<h4><a href="#">新鲜果蔬新鲜上市快来购买</a></h4>
-								<p>商城价:<span class="red">15.00元</span></p>
-								<div class="gwcc">
-									<a href="#">加入购物车</a>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</div>
-
-				<!--part5-->
-				<div class="part1 part00">
-					<div class="part1_title  part">
-						<h2>田园蔬菜</h2>
-						<p>
-							<a href="#">生态蔬菜</a>|
-							<a href="#">有机蔬菜</a>|
-							<a href="#">精品菌菇</a>|
-							<a href="#"> 田园套餐</a>|
-							<a href="#">蔬菜干货</a>|
-							<a href="#">菜类</a>
-						</p>
-					</div>
-					<div class="main_box">
-						<ul name="ll" class="lbanner p5">
-							<li><img src="images/l_banner.png" /></li>
-							<li><img src="images/l_banner.png" /></li>
-							<li><img src="images/lbanner2.png" /></li>
-							<li><img src="images/l_banner.png" /></li>
-						</ul>
-						<ul class="pro_list">
-							<li> <img src="images/pro6.png" />
-								<h4><a href="#">新鲜果蔬新鲜上市快来购买</a></h4>
-								<p>商城价:<span class="red">15.00元</span></p>
-								<div class="gwcc">
-									<a href="#">加入购物车</a>
-								</div>
-							</li>
-							<li> <img src="images/pro7.png" />
-								<h4><a href="#">新鲜果蔬新鲜上市快来购买</a></h4>
-								<p>商城价:<span class="red">15.00元</span></p>
-								<div class="gwcc">
-									<a href="#">加入购物车</a>
-								</div>
-							</li>
-							<li> <img src="images/pro9.png" />
-								<h4><a href="#">新鲜果蔬新鲜上市快来购买</a></h4>
-								<p>商城价:<span class="red">15.00元</span></p>
-								<div class="gwcc">
-									<a href="#">加入购物车</a>
-								</div>
-							</li>
-							<li> <img src="images/pro8.png" />
-								<h4><a href="#">新鲜果蔬新鲜上市快来购买</a></h4>
-								<p>商城价:<span class="red">15.00元</span></p>
-								<div class="gwcc">
-									<a href="#">加入购物车</a>
-								</div>
-							</li>
-							<li> <img src="images/pro6.png" />
-								<h4><a href="#">新鲜果蔬新鲜上市快来购买</a></h4>
-								<p>商城价:<span class="red">15.00元</span></p>
-								<div class="gwcc">
-									<a href="#">加入购物车</a>
-								</div>
-							</li>
-							<li> <img src="images/pro8.png" />
-								<h4><a href="#">新鲜果蔬新鲜上市快来购买</a></h4>
-								<p>商城价:<span class="red">15.00元</span></p>
-								<div class="gwcc">
-									<a href="#">加入购物车</a>
-								</div>
-							</li>
-							<li> <img src="images/pro6.png" />
-								<h4><a href="#">新鲜果蔬新鲜上市快来购买</a></h4>
-								<p>商城价:<span class="red">15.00元</span></p>
-								<div class="gwcc">
-									<a href="#">加入购物车</a>
-								</div>
-							</li>
-							<li> <img src="images/pro7.png" />
-								<h4><a href="#">新鲜果蔬新鲜上市快来购买</a></h4>
-								<p>商城价:<span class="red">15.00元</span></p>
-								<div class="gwcc">
-									<a href="#">加入购物车</a>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="footer"> <img src="images/footer.jpg" /> </div>
 		</div>
+		
+		<div id="search" class="container">
+			
+			<div class="search_item">
+				<div id="search_ico_select"></div>
+				<a href="https://www.baidu.com" id="search_current"></a>
+				<div id="search_list">
+					<a id="baidu"></a>
+					<a id="google"></a>
+				</div>
+				
+			</div>
 
-		<script type="text/javascript">
-			window.onload = function() {
-				//固定层定位
-				//获取视口宽度
-				var wid = document.documentElement.clientWidth;
-				var fix = document.getElementById("fix");
-				var ons = document.getElementById("ons");
-				var timer = null;
-
-				//楼层定位
-				function lcc() {
-					var sws = document.getElementsByName("lcc")
-					var ll = document.getElementsByName("ll")
-					var timer = null
-					for(var i = 0; i < sws.length; i++) {
-						sws[i].nn = i
-						sws[i].onclick = function() {
-							var sss = ll[this.nn].offsetTop
-							// alert(ll[this.nn].offsetTop)
-							clearInterval(timer)
-							timer = setInterval(function() {
-								var tt = document.documentElement.scrollTop || document.body.scrollTop;
-								var speed = null;
-								speed = speed > 0 ? Math.Ceil((sss - tt) / 10) : Math.floor((sss - tt) / 10)
-								document.documentElement.scrollTop = document.body.scrollTop = tt + speed
-								console.log(speed)
-								if(speed == 0) {
-									clearInterval(timer)
-								}
-							}, 30)
-						}
-					}
-				}
-				lcc()
-
-				//无缝滚动
-				var prolist = document.getElementById("prolist");
-				var uu = document.getElementById("prolistu");
-				var li = uu.getElementsByTagName("li");
-				var xz = document.getElementsByName("pre")[0];
-				var xy = document.getElementsByName("next")[0];
-				uu.innerHTML += uu.innerHTML
-				uu.style.width = li[0].offsetWidth * li.length + "px"
-				var spp = -2;
-				var ti = null;
-
-				function ss() {
-					if(uu.offsetLeft <= -uu.offsetWidth / 2) {
-						uu.style.left = 0
-					}
-					if(uu.offsetLeft > 0) {
-						uu.style.left = -uu.offsetWidth / 2 + "px"
-					}
-					uu.style.left = uu.offsetLeft + spp + "px"
-				}
-				ti = setInterval(ss, 30)
-				xz.onclick = function() {
-					spp = -2
-				}
-				xy.onclick = function() {
-					spp = 2
-				}
-				prolist.onmouseover = function() {
-					clearInterval(ti)
-				}
-				prolist.onmouseout = function() {
-					ti = setInterval(ss, 30)
-				}
-
-				//轮播图
-				var zs = $(".banner_list li").size()
-				var times = "null"
-
-				function loo() {
-					var num = $(".banner_list li:visible").index()
-					var nu = num + 1
-					if(num >= zs - 1) {
-						nu = 0
-					}
-					$(".banner_list li").hide().eq(nu).show()
-					$(".qh li").removeClass("active").eq(nu).addClass("active")
-				}
-
-				$(".banner .next").click(loo)
-				$(".banner .pre").click(function() {
-					var num = $(".banner_list li:visible").index()
-					var nu = num - 1
-					if(num <= 0) {
-						nu = zs - 1
-					}
-					$(".banner_list li").hide().eq(nu).show()
-					$(".qh li").removeClass("active").eq(nu).addClass("active")
-				})
-				times = setInterval(loo, 2000)
-				$(".qh li").click(function() {
-					var num = $(this).index()
-					$(".banner_list li").hide().eq(num).show()
-					$(".qh li").removeClass("active").eq(num).addClass("active")
-				})
-				$(".banner").mouseover(function() {
-					clearInterval(times)
-				})
-				$(".banner").mouseout(function() {
-					times = setInterval(loo, 2000)
-				})
-
-				//楼层广告图
-				function xd(ww) {
-					var szz = $("." + ww + ">li").size()
-					var timess = setInterval(function() {
-						var num = $("." + ww + ">li:visible").index()
-						var nu = num + 1
-						if(num >= szz - 1) {
-							nu = 0
-						}
-						$("." + ww + ">li").hide().eq(nu).show()
-					}, 2500)
-				}
-				xd("p1")
-				xd("p2")
-				xd("p3")
-				xd("p4")
-				xd("p5")
-
-			}
-		</script>
+			<div class="search_item"><input id="search_txt" type="text"></div>
+			<div class="search_item"><input id="search_btn" class="btn" type="button" value="搜索一下"> </div>
+		</div>
+		<div id="content" class="container">
+			<div id="content_header">
+				
+			</div>
+			<fieldset>
+				<legend>我最感兴趣的网址</legend>
+				
+				<div class="content_item">
+					<a href="https://www.baidu.com/">
+						<img width="16px" height="16px" alt="图片" title="图片" src="img/logo/baidu.ico"/>
+						<div>百度</div>
+					</a>
+				</div>
+				<div class="content_item">
+					<a href="https://www.google.com/">
+						
+						<img width="16px" height="16px" src="img/logo/google.ico"/>
+						<div >Google</div>
+					</a>
+				</div>
+				<div class="content_item">
+					<a href="https://bbs.bccn.net/">
+						<img width="16px" height="16px" src="img/logo/bccn.ico"/>
+						<div>编程论坛</div>
+					</a>
+				</div>
+			</fieldset>
+		</div>
+		<div id="footer" class="container">Copyright ©2018 LDSH Powered By HomeOfTheWebsite Version 1.0.0</div>
 	</body>
 
 </html>
