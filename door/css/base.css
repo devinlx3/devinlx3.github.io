@@ -1,0 +1,121 @@
+* {
+	margin: 0px 0px;
+}
+a {
+	text-decoration: none;
+}
+a:hover {
+	color: black;
+}
+li {
+	list-style: none;
+}
+.divmargin {
+	margin: 0px 100px;
+}
+#top {
+	background: #54FADD;
+	overflow: hidden;
+}
+#top img {
+	float: left;
+}
+#top a {
+	margin-top: 3px;
+	margin-right: 3px;
+	float: right;
+}
+#topnav {
+	background: #54FAFF;
+	height: 36px;
+	vertical-align: middle;
+}
+#topnav ul {
+	height: 36px;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+#topnav li {
+	float: left;
+	border-right: 1px solid white;
+}
+#topnav li:hover {
+	border-top: 2px solid blue;
+}
+#topnav li a {
+	padding: 8px 10px;
+	width: 60px;
+	color: white;
+	background: #AA00CC;
+	text-align: center;
+	display: block;
+	cursor: pointer;
+	overflow: hidden;
+	user-select: none;
+}
+#container {
+	padding: 5px;
+	padding-bottom: 0px;
+	height: 536px;
+	background: white;
+}
+#footer {
+	height: 30px;
+	background: #54FADD;
+}
+#footer a {
+	margin-left: 30px;
+	position: relative;
+	top: -22%;
+}
+
+/*内容模型的样式*/
+#containerh1 {
+	font-size: 20px;
+	padding-bottom: 3px;
+	border-bottom: 1px dotted #CCCCCC;
+}
+#containerhtml ul {
+	list-style: none;
+	padding: 0px;
+	margin-left: 3px;
+}
+#containerhtml li {
+	width: 148px;
+	height: 90px;
+	float: left;
+	background: url(../img/timelist.jpg) no-repeat;
+	padding: 20px;
+	padding-top: 0px;
+}
+#containerhtml li:hover a {
+	color: #B61010;
+}
+#containerhtml li:hover p {
+	color: black;
+}
+#containerhtml a {
+	color: #555;
+	text-decoration: none;
+	margin-top: 3px;
+	display: inline-block;
+	padding: 1px 3px;
+	overflow: hidden;
+	border-radius: 2px;
+	font-size: 14px;
+	line-height: 1.5em;
+	font-weight: bold;
+}
+#containerhtml p {
+	width: 160px;
+	height: 60px;
+	color: #CCCCCC;
+	padding: 0 5px;
+	line-height: 1.5em;
+	font-size: 14px;
+	overflow: hidden;
+	color: #999;
+	font-weight: normal;
+	cursor: pointer;
+}
