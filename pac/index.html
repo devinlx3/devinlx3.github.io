@@ -2,9 +2,10 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>PAC</title>
-		<script type="text/javascript" src="js/jquery-3.2.1.js" ></script>
+		<script type="text/javascript" src="jquery-3.2.1.js" ></script>
 		<script>
 			$(function(){
+				alert(data);
 				var headVal = "function FindProxyForURL(url, host) {"+
 							  "var rules = [";
 				var footVal="];"+
@@ -19,7 +20,6 @@
 					url:"url.txt",
 					async:false,
 					success:function(data){
-						alert(data);
 						$("#pac").html(headVal+data+footVal);
 					}
 				});
