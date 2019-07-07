@@ -1,22 +1,44 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<title>主页</title>
-		<style>
-			a{
-				text-decoration:none;
-			}
-		</style>
-	</head>
-	<body>
-		<a href="webguide/index.html">上网导航</a><br>
-		<a href="door/index.html">学习门户</a><br>
-		<a href="vipfilm/index.html">解析vip</a>
-		<a href="pac/index.html">PAC</a>
-		<br>
-		<br>
-		<br>
-		<a href="mirror/index.html">镜像</a>
-	</body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+    <!-- <script src="https://cdn.bootcss.com/react/15.4.2/react.min.js"></script>
+<script src="https://cdn.bootcss.com/react/15.4.2/react-dom.min.js"></script>
+<script src="https://cdn.bootcss.com/babel-standalone/6.22.1/babel.min.js"></script>
+<script src="http://static.runoob.com/assets/react/browser.min.js"></script>
+ -->
+    <style>
+        #root {
+            margin: 0px auto;
+            width: 1200px;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <script src="lib/react.min.js"></script>
+    <script src="lib/react-dom.min.js"></script>
+    <script src="lib/babel.min.js"></script>
+    <script src='lib/util.js'></script>
+    <script type='text/babel' src='index.js'></script>
+    <script type="text/babel" src="header.js"></script>
+    <script type="text/babel" src="content/home.js"></script>
+    <script type='text/babel' src='content/door.js'></script>
+    <script type='text/babel' src='content/mirror.js'></script>
+    <script type='text/babel' src='content/repository.js'></script>
+    <script type="text/babel" src="content/root.js"></script>
+    <script type="text/babel">
+    ReactDOM.render(
+        (<App />),
+        document.getElementById('root')
+    );
+    </script>
+</head>
+<body>
+    <div id="root" class="container"></div>
+</body>
+
 </html>
