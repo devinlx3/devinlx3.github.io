@@ -14,7 +14,7 @@
 
 - [Windows ISO映像](notes/映像与镜像/Windows.md)
 
-- [WSL 映像](https://docs.microsoft.com/zh-cn/windows/wsl/install-manual)
+- [WSL 发行版](https://docs.microsoft.com/zh-cn/windows/wsl/install-manual)
 
 - [Docker](notes/映像与镜像/Docker.md)
 
