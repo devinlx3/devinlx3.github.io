@@ -27,3 +27,6 @@
 
 ## 二、软件集合
 - [Apache 软件集合](notes/软件集合/Apache.md)
+
+## 三、杂项
+- [获取文件内容](file.html)
