@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Get File Content</title>
+  <script>
+	window.devinx3 = {
+		inputFileChange: function(obj){
+			const inputFile = obj.files[0];
+			const reader = new FileReader();
+			reader.readAsText(inputFile, "UTF-8");
+			reader.onload = function(evt){ window.devinx3.inputFileRead(evt) };
+		},
+		inputFileRead: function(event) {
+			console.log('please Override current function; eg:  devinx3.inputFileRead = function(event) {console.log(event.target.result);} ');
+		},
+	}
+  </script>
+</head>
+<body>
+  <input id="input" type="file" onchange="window.devinx3.inputFileChange(this)">
+</body>
+</html>
